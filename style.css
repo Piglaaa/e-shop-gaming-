@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --bg-color: #a740c5;
+}
+
+/*body style*/
+body {
+  height: 100%;
+  background-color: black;
+}
+/*Navbar style*/
+.navbar {
+  padding: 20px 5%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  top: 0%;
+  z-index: 999;
+  background-color: black;
+}
+
+.navbar .logo h1 {
+  color: white;
+  cursor: pointer;
+}
+
+.navbar .menu li {
+  list-style: none;
+  display: inline-block;
+}
+
+.navbar .menu li a {
+  display: block;
+  margin-left: 20px;
+  color: white;
+  border-bottom: 4px solid transparent;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.navbar .logo h1 {
+  color: white;
+  cursor: pointer;
+}
+
+#fa-solid {
+  color: #a740c5;
+}
+
+#fa-shopping-cart {
+  color: #a740c5;
+}
+/*Menu style*/
+.navbar .menu li {
+  list-style: none;
+  display: inline-block;
+}
+
+.navbar .menu li a {
+  display: block;
+  margin-left: 20px;
+  color: white;
+  border-bottom: 4px solid transparent;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.navbar .menu li .active {
+  border-bottom: 4px solid white;
+}
+
+.navbar .menu li .a:hover {
+  border-bottom: 4px solid white;
+}
+
+.content {
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+  height: 100vh;
+}
+
+.banner {
+  position: absolute;
+  top: 0;
+  right: 30px;
+  width: 500px;
+  height: 100%;
+  background: transparent;
+  transition: 3s;
+}
+
+.banner {
+  background: transparent;
+  clip-path: circle(50% at 50% 50%);
+  opacity: 0.8;
+}
+
+.banner {
+  width: 80vh;
+  height: 80vh;
+  clip-path: circle(50% at 50% 50%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  background-color: transparent;
+}
+
+.banner > div {
+  clip-path: circle(50% at 50% 50%);
+  width: 75%;
+  height: 75%;
+  aspect-ratio: 1/1;
+  text-align: center;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner > div > img {
+  width: 80%;
+  height: 80%;
+  clip-path: circle(50% at 50% 50%);
+}
+
+.content h1 {
+  font-size: 40px;
+}
+
+.content p {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.content button {
+  margin-top: 30px;
+  padding: 15px 30px;
+  border: none;
+  background: var(--bg-color);
+  color: white;
+  background-color: var(--bg-color);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.produits_texte {
+  text-align: left;
+  font-size: 30px;
+  font-weight: 300;
+  margin-top: 30px;
+  margin-left: 80px;
+  color: #a740c5;
+}
+
+.section_produits {
+  padding: 40px 5%;
+}
+/*informations of products*/
+.produits {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmmax(320px 1fr));
+  display: flex;
+  justify-content: space-between;
+  gap: 17px;
+}
+/*carte style*/
+.produits .carte {
+  width: 310px;
+  background: #f5f5f5;
+  box-shadow: 0 10px 20px rgb(0, 0, 0, 0.3);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/*img of products*/
+.produits .carte img {
+  height: 320px;
+  width: 100%;
+  border-radius: 10px;
+}
+/*desc class style*/
+.produits .carte .desc {
+  padding: 10px 20px;
+  color: black;
+}
+/*Title style*/
+.produits .carte .titre {
+  font-weight: 900;
+  font-size: 20px;
+  color: var(--bg-color);
+  padding: 0 20px;
+}
+/*box style*/
+.produits .carte .box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+/*Prix class style*/
+.produits .carte .prix {
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+/*Button style*/
+.produits .carte .button {
+  font-size: 13px;
+  font-weight: 900;
+  color: #a740c5;
+  padding: 10px 18px;
+  border-radius: 5px;
+}
+/*border and button style*/
+.produits .carte .achat {
+  font-size: 13px;
+  font-weight: 900;
+  color: var(--bg-color);
+  padding: 10px 18px;
+  border-radius: 5px;
+  transition: 0.4s;
+}
+
+.produits .carte .box .achat:hover {
+  cursor: pointer;
+  background: var(--bg-color);
+  color: black;
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2);
+}
+
+footer {
+  background: white;
+  height: 10vh;
+}
+
+footer p {
+  text-align: center;
+  line-height: 10vh;
+}
+footer p a {
+  text-decoration: none;
+  color: #a740c5;
+  font-weight: bold;
+}
