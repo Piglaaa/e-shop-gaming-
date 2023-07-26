@@ -4,11 +4,11 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-
+/*body style*/
 body {
   background-color: black;
 }
-
+/*content style*/
 h1 {
   display: flex;
   justify-content: center;

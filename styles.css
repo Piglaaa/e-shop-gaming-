@@ -10,7 +10,7 @@
   --second-color: black;
   --text-color: white;
 }
-
+/*body style*/
 body {
   display: flex;
   justify-content: center;
@@ -107,7 +107,7 @@ body {
 .input-box input:valid ~ i {
   color: var(--bg-color);
 }
-
+/*button style*/
 .btn {
   position: relative;
   width: 100%;
