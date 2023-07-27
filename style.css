@@ -276,3 +276,17 @@ footer p a {
 .achat a {
   text-decoration: none;
 }
+
+input {
+  width: 50px;
+  border: none;
+  background: none;
+  color: #919191;
+  font-size: 30px;
+  margin: 0 10px;
+  pointer-events: none;
+}
+
+.liked {
+  color: var(--bg-color);
+}
